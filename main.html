@@ -15,10 +15,13 @@
     </header>
 
     <main class="main-screen">
-        <span class="main__timestamp">
-            현재 날짜
-        </span>
-
+        <div class="main__timestamp">
+            <span class="main__timestamp">
+                현재 날짜
+            </span>
+            <span id="clock"></span>
+        </div>
+        
         <div class="download">
             <span><i class="fas fa-file-download fa-2x"></i></span>
             <span class="download__title">다운로드</span>
@@ -35,13 +38,14 @@
             <div class="download__file develop">
                 <a href="" download="">
                     <span><i class="fas fa-cog fa-2x"></i></span>
-                    <span class="download__file__filename">개발중</span>
+                    <span class="download__file__filename">준비중</span>
                 </a>
             </div>
         </div>
 
     </main>
     <script src="https://kit.fontawesome.com/90b2e55def.js" crossorigin="anonymous"></script>
-    <script src="java.js"></script>
+    <script src="js/java.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 </html>
