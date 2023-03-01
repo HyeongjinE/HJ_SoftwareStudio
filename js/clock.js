@@ -1,4 +1,4 @@
-const clock = document.querySelector("span#clock");
+const clock = document.querySelector(".main__timestamp span:last-child");
 
 function getClock() {
     const date = new Date();
