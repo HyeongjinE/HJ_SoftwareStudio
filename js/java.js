@@ -35,7 +35,7 @@ setInterval(getClock, 1000);
 const develop = document.querySelector(".develop");
 
 function developClick() {
-    alert("과제를 주세요!")
+    alert("준비 중입니다!")
 }
 
 develop.addEventListener("click", developClick)
