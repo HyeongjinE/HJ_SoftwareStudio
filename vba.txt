@@ -1,0 +1,75 @@
+Private Sub Worksheet_BeforeDoubleClick(ByVal Target As Range, Cancel As Boolean)
+
+Application.ScreenUpdating = False
+Application.EnableEvents = False
+
+Dim classTimeRange As Range: Set classTimeRange = Range("B8:J8")
+Dim studentRange As Range: Set studentRange = Range("B4:E4")
+Dim dateRange As Range: Set dateRange = Range("C2:E3")
+
+Dim targetClassTimeRange As Range: Set targetClassTimeRange = Application.Intersect(Target, classTimeRange)
+Dim targetStudentRange As Range: Set targetStudentRange = Application.Intersect(Target, studentRange)
+Dim targetDateRange As Range: Set targetDateRange = Application.Intersect(Target, dateRange)
+
+Dim rw As Integer, lastRow
+
+lastRow = Range("AA10000").End(xlUp).Row
+
+Dim documentRange As Range: Set documentRange = Range("AA4:AC" & lastRow)
+Dim studentDataRange As Range: Set studentDataRange = Range("N4:O" & lastRow)
+Dim targetDocumentRange As Range: Set targetDocumentRange = Application.Intersect(Target, documentRange)
+Dim targetStudentDataRange As Range: Set targetStudentDataRange = Application.Intersect(Target, studentDataRange)
+
+Cancel = True
+
+If Not targetClassTimeRange Is Nothing Then
+    If Target.Value = "" Then
+        Target.Value = "/"
+        Range(Cells(8, 1).End(xlToRight), Cells(8, 11).End(xlToLeft)).Value = "/"
+    Else
+        Target.Value = ""
+    End If
+    Application.ScreenUpdating = True
+    Application.EnableEvents = True
+    Exit Sub
+End If
+
+If Not targetStudentRange Is Nothing Then
+    명단.Show vbModal
+    Application.ScreenUpdating = True
+    Application.EnableEvents = True
+    Exit Sub
+End If
+
+If Not targetDateRange Is Nothing Then
+    달력.Show vbModal
+    If Target.Row = 2 Then
+        Cells(3, 3).Value = Cells(2, 3).Value
+    End If
+    Application.ScreenUpdating = True
+    Application.EnableEvents = True
+    Exit Sub
+End If
+
+If Not targetDocumentRange Is Nothing Then
+    Application.EnableEvents = True
+    If Target.Value = "-" Then
+        Target.Value = "X"
+    Else
+        Target.Value = "-"
+    End If
+    Application.ScreenUpdating = True
+    Exit Sub
+End If
+
+If Not targetStudentDataRange Is Nothing Then
+    개인별통계.Show vbModal
+    Application.ScreenUpdating = True
+    Application.EnableEvents = True
+    Exit Sub
+End If
+
+Application.ScreenUpdating = True
+Application.EnableEvents = True
+
+End Sub

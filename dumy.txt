@@ -1,0 +1,14 @@
+
+            <div class="download__file">
+                <a href="엑셀 출석부 연습용.xlsm" download="엑셀 출석부 연습용.xlsm">
+                    <span><i class="far fa-address-book fa-2x"></i></span>
+                    <span class="download__file__filename">엑셀 출석부 연습용</span>
+                </a>
+            </div>
+
+            <div class="download__file">
+                <a href="엑셀 출석부 사용법.pdf" download="엑셀 출석부 사용법.pdf">
+                    <span><i class="fas fa-scroll fa-2x"></i></span>
+                    <span class="download__file__filename">엑셀 출석부 사용법</span>
+                </a>
+            </div>
