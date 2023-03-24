@@ -146,6 +146,7 @@ main {
 .hidden {
     display: none;
 }
+
 .link {
     display: flex;
     align-items: center;
