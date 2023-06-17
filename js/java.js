@@ -38,21 +38,3 @@ setInterval(getClock, 1000);
 function developClick() {
     alert("준비 중입니다!")
 }
-
-// develop.addEventListener("click", developClick)
-// explainTrigger.addEventListener("mouseover", function() {
-//     explain.classList.remove("hidden");
-//     develop.style.top = "-30px";
-// })
-// explainTrigger.addEventListener("mouseout", function() {
-//     explain.classList.add("hidden");
-//     develop.style.top = "0px";
-// })
-// explain.addEventListener("mouseover", function() {
-//     explain.classList.remove("hidden");
-//     develop.style.top = "-30px";
-// })
-// explain.addEventListener("mouseout", function() {
-//     explain.classList.add("hidden");
-//     develop.style.top = "0px";
-// })
