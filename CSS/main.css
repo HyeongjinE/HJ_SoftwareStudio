@@ -76,6 +76,10 @@ body {
     z-index: 0;
     opacity: 0;
     animation: opa 0.5s ease-out forwards;
+
+}
+
+.partition {
     display: flex;
 }
 
@@ -223,4 +227,11 @@ body {
 
 .terms {
     margin-top: 0;
+}
+
+.limited_use_requirement{
+    padding: 10px;
+    padding-right: 5px;
+    text-align: left;
+    line-height: 22px;
 }
