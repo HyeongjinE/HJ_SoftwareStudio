@@ -237,3 +237,7 @@ body {
     line-height: 22px;
     display: block;
 }
+.link_google_service {
+    text-decoration: underline;
+    color: blue;
+}
