@@ -166,6 +166,8 @@ body {
     justify-content: center;
 }
 .link__img {
+    width: 32px;
+    height: 32px;
     margin-right: 10px;
 }
 .link__text {
@@ -254,10 +256,4 @@ body {
 
 .develop:not(:hover) {
     transition: 1s ease-out;
-}
-
-.link__img__youtube {
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
 }
