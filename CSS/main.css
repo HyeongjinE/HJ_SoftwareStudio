@@ -33,7 +33,7 @@ body {
 
 .download {
     text-align: start;
-    margin-top: 60px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 
@@ -256,4 +256,22 @@ body {
 
 .develop:not(:hover) {
     transition: 1s ease-out;
+}
+
+.kakao {
+    background-color: yellow;
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 2px;
+    float: right;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#comment {
+    margin-right: 8px;
 }
